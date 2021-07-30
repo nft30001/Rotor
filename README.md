@@ -88,7 +88,5 @@ Iteration 1 at [2021-03-20 00:10:01] from: af34b0f60ded1c5597e31d5ed65a27755f362
 - [Как создать базу адресов .bin ?](https://github.com/phrutis/Rotor/issues/1)
 - [Зачем нужны файлы START.bat и Next.bat ?](https://github.com/phrutis/Rotor/issues/2)
 - [Гипотеза - Почему Random лучше перебора ?](https://github.com/phrutis/Rotor/issues/3)
-- 
 ## Donation
 - BTC: bc1qh2mvnf5fujg93mwl8pe688yucaw9sflmwsukz9
-
