@@ -7,7 +7,6 @@ Brute force Bitcoin private keys random
 - [Как создать базу адресов adresses-160-sort.bin ](https://github.com/phrutis/Rotor/issues/1)
 - [Зачем нужны файлы START.bat и Next.bat](https://github.com/phrutis/Rotor/issues/2)
 - [Гипотеза - Почему Random лучше перебора ](https://github.com/phrutis/Rotor/issues/3)
-- 
 ## Параметры:
 ```
 Rotor.exe -h
