@@ -2,6 +2,12 @@ Brute force Bitcoin private keys random
 ![alt text](Others/2.jpg "Rotor")
 # Rotor
 Это модифицированная версия [oclexplorer](https://github.com/svtrostov/oclexplorer) от svtrostov.
+
+# Часто задаваемые вопросы:
+- [Как создать базу адресов adresses-160-sort.bin ](https://github.com/phrutis/Rotor/issues/1)
+- [Зачем нужны файлы START.bat и Next.bat](https://github.com/phrutis/Rotor/issues/2)
+- [Гипотеза - Почему Random лучше перебора ](https://github.com/phrutis/Rotor/issues/3)
+- 
 ## Параметры:
 ```
 Rotor.exe -h
@@ -13,8 +19,8 @@ Options:
     -c, --cols             Grid cols [default: 0(auto)]
     -i, --invsize          Mod inverse batch size [default: 0(auto)]
     -m, --mode             Address mode [default: 0] [0: uncompressed, 1: compressed, 2: both] (Required)
-    -u, --unlim            Unlimited rounds [default: 0] [0: false, 1: true]
-    -k, --privkey          Base privkey
+    -u, --unlim            Отключить генерацию нового хэша [по умолчанию: 0] [0: откл., 1: вкл.]  пример: -u 1
+    -k, --privkey          Стартовый хэш пример: -k b5d4045c3f466fa91fe2cc6abe79232a1a57cdf104f7a26e716e0a1e2789df78
     -f, --file             RMD160 Address binary file path (Required)
     -h, --help             Shows this page
 ```
@@ -70,7 +76,7 @@ Iteration 1 at [2021-03-20 00:10:01] from: af34b0f60ded1c5597e31d5ed65a27755f362
 [af34b0f60ded1c5597e31d5ed65a27755f3621e7ed3b3ecb3151fba04c1a2dcd] [round 167: 0.21s (69.28 Mkey/s)] [total 2,451,570,688 (65.94 Mkey/s)]
 
 ```
-# Rotor 2
+# Rotor2
 ## Изминения:
 - Изменино время рандома. Выставил генерацию нового хэша каждые 1 сек. (было ~ 2-3 минуты) К новому хэшу добавляется значения +70-150 млн.
 - Для удобства использования убрано отображение "Iteration 1 at [дата, время] from: xxxxxxxxxxxxxxxx" которое переносилось на новую строку и засоряло экран.
@@ -80,13 +86,15 @@ Iteration 1 at [2021-03-20 00:10:01] from: af34b0f60ded1c5597e31d5ed65a27755f362
 - Сделано это для удобства, копируем адреса из файла Found.txt вставляем в окно проверки адресов списком на сайте. К примеру на сайтах https://www.homebitcoin.com/easybalance/ или https://bitcoindata.science/bitcoin-balance-check.html или http://addresschecker.eu можете найти свои сайты для проверски списком. Желательно проверять на двух разных сайтах, для точности.
 - Файл gpu.cl нужен, без него не работает!
 
-# Rotor 3
+# Rotor3
 ## Изминения:
 - Полный рандом. Возможно к новому хэшу добавляется +1 значение
 - Файл gpu.cl нужен, без него не работает!
-# Часто задаваемые вопросы:
-- [Как создать базу адресов .bin ?](https://github.com/phrutis/Rotor/issues/1)
-- [Зачем нужны файлы START.bat и Next.bat ?](https://github.com/phrutis/Rotor/issues/2)
-- [Гипотеза - Почему Random лучше перебора ?](https://github.com/phrutis/Rotor/issues/3)
+
+# Rotor10xxxxxxxx
+## Изминения:
+- Генерация нового хэша происходит после 10.000.000... значений указаных в названии
+- Файл gpu.cl нужен, без него не работает!
+
 ## Donation
 - BTC: bc1qh2mvnf5fujg93mwl8pe688yucaw9sflmwsukz9
